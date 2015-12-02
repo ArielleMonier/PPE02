@@ -28,5 +28,19 @@ class reservations_modele extends CI_Model {
             return $recup_jour;
         }
     }
+    
+    
+    public function set_formulaire() {
+        
+        $data = array(
+                        'idUtil' => $this->input->post('id'),
+                        'Date_Arrivee' => $this->input->post('date_arrivee'),
+                        'Date_Depart' => $this->input->post('date_depart'),
+                        'Nb_Personnes' => $this->input->post('nbpersonnes'),
+                        'Pension' => $this->input->post('pension'),
+                        'forfaitMenage' => $this->input->post('forfait')
+                    );
+        return $this->db->insert('reservation', $data);
+    }
 
 }

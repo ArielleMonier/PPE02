@@ -62,5 +62,29 @@ class Reservations extends CI_Controller {
          */
         $this->load->view('templates/calendar_templates', $data);
     }
+    
+    public function ajout_utilisateur() {
+            $this->load->helper('form');
+            $this->load->library('form_validation');
+            $this->load->model('reservations_modele');
+
+
+
+            $this->load->library('form_validation');
+
+
+            $this->form_validation->set_rules('id', "id", 'required');
+            //$this->form_validation->set_rules('Date_Arrivee', "La date d'arrivee ", 'trim|required|xss_clean');
+            //$this->form_validation->set_rules('Date_Depart', "La date de départ", 'trim|required|xss_clean');
+
+            if ($this->form_validation->run() === false) {
+                $this->load->view('reservations/formulaire');
+                
+            } else {
+                    
+                    $this->reservations_modele->set_formulaire();
+                    $this->load->view('reservations/formulairesuccess');
+                }
+            }
 
 }
