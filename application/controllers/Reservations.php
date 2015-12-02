@@ -23,6 +23,8 @@ class Reservations extends CI_Controller {
         $this->load->view('templates/footer', $data);
     }
 
+    
+    
     public function calendrier($num = 0, $annee = 0, $mois = 0) {
 
         /**
