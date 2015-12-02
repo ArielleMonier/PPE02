@@ -23,8 +23,6 @@ class Reservations extends CI_Controller {
         $this->load->view('templates/footer', $data);
     }
 
-    
-    
     public function calendrier($num = 0, $annee = 0, $mois = 0) {
 
         /**
@@ -52,7 +50,7 @@ class Reservations extends CI_Controller {
 
         $data['annee'] = $annee = $this->uri->segment(4);
         $data['mois'] = $mois = $this->uri->segment(5);
-        
+
         $data['jour'] = $this->Reservations_modele->get_jours($num, $annee, $mois);
 
 
@@ -62,29 +60,28 @@ class Reservations extends CI_Controller {
          */
         $this->load->view('templates/calendar_templates', $data);
     }
-    
+
     public function ajout_utilisateur() {
-            $this->load->helper('form');
-            $this->load->library('form_validation');
-            $this->load->model('reservations_modele');
+        $this->load->helper('form');
+        $this->load->library('form_validation');
+        $this->load->model('reservations_modele');
 
 
 
-            $this->load->library('form_validation');
+        $this->load->library('form_validation');
 
 
-            $this->form_validation->set_rules('id', "id", 'required');
-            //$this->form_validation->set_rules('Date_Arrivee', "La date d'arrivee ", 'trim|required|xss_clean');
-            //$this->form_validation->set_rules('Date_Depart', "La date de départ", 'trim|required|xss_clean');
+        $this->form_validation->set_rules('id', "id", 'required');
+        //$this->form_validation->set_rules('Date_Arrivee', "La date d'arrivee ", 'trim|required|xss_clean');
+        //$this->form_validation->set_rules('Date_Depart', "La date de départ", 'trim|required|xss_clean');
 
-            if ($this->form_validation->run() === false) {
-                $this->load->view('reservations/formulaire');
-                
-            } else {
-                    
-                    $this->reservations_modele->set_formulaire();
-                    $this->load->view('reservations/formulairesuccess');
-                }
-            }
+        if ($this->form_validation->run() === false) {
+            $this->load->view('reservations/formulaire');
+        } else {
+
+            $this->reservations_modele->set_formulaire();
+            $this->load->view('reservations/formulairesuccess');
+        }
+    }
 
 }
