@@ -42,4 +42,14 @@ class reservations_modele extends CI_Model {
         return $this->db->insert('reservation', $data);
     }
 
+    public function set_create_compte() {
+        $data = array(
+            'Login' => $this->input->post('login'),
+            'Mdp' => $this->input->post('password'),
+            'Nom' => $this->input->post('nom'),
+            'Prenom' => $this->input->post('prenom')
+        );
+        return $this->db->insert('Utilisateur', $data);
+    }
+
 }

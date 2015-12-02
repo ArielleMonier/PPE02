@@ -84,4 +84,19 @@ class Reservations extends CI_Controller {
         }
     }
 
+    public function create_compte() {
+
+
+        $this->load->helper('form');
+        $this->load->library('form_validation');
+        $this->load->model('reservations_modele');
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->load->view('reservations/creation_compte');
+        } else {
+            $this->reservations_modele->set_create_compte();
+            $this->load->view('create_success');
+        }
+    }
+
 }
