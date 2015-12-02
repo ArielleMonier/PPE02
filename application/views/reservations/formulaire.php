@@ -16,21 +16,21 @@ and open the template in the editor.
         ?>
         
          <label for="id">Votre id</label>
-        <input type="text" name="id" value="" size="5" />
+         <input type="text" name="id" value="" size="5" /><br>
 
         <label for="date_arrivee">Date d'arrivée</label>
-        <input type="date" name="date_arrivee" />
+        <input type="date" name="date_arrivee" /><br>
 
         <label for="date_depart"> Date de départ</label>
-        <input type="date" name="date_depart" />
+        <input type="date" name="date_depart" /><br>
 
         <label for="nbpersonnes">Combien de personnes</label>
-        <input type="text" name="nbpersonnes" value="" size="50" />
+        <input type="text" name="nbpersonnes" value="" size="50" /><br>
         
         <select name = "pension">
             <option value="pension_complete">Pension complete</option>
             <option value="demi-pension">Demi-pension</option>
-        </select>
+        </select><br>
         
         <label for="forfait">Voulez-vous le forfait "ménage de fin de séjour" ?</label>
         <input type="radio" name="forfait" value=1 />Oui
