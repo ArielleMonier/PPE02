@@ -87,6 +87,8 @@ class Reservations extends CI_Controller {
         $this->load->helper('form');
         $this->load->library('form_validation');
         $this->load->model('reservations_modele');
+        
+         $this->form_validation->set_rules('Login', "login", 'required');
 
         if ($this->form_validation->run() == FALSE) {
             $this->load->view('reservations/creation_compte');
