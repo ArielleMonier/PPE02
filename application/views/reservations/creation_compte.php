@@ -1,33 +1,44 @@
 <html>
-<head>
-<title>My Form</title>
-</head>
-<body>
+    <head>
+        <title>My Form</title>
+        
+    </head>
+    <body>
 
-<?php echo validation_errors(); ?>
+        <?php echo validation_errors(); ?>
 
-<?php echo form_open('reservations/create_compte'); ?>
+        <?php echo form_open('reservations/create_compte'); ?>
 
-<h5>Login : </h5>
-<input type="text" name="login" value="" size="30" />
+        <label>Login : </label>
+        <input type="text" name="login" value="" size="30" />
+        <br>
 
-<h5>Mot de passe : </h5>
-<input type="text" name="password" value="" size="30" />
+        <label>Mot de passe : </label>
+        <input type="text" name="password" value="" size="30" />
+        <br>
 
-<h5>Confirmer mot de passe : </h5>
-<input type="text" name="passconf" value="" size="30" />
+        <label>Confirmer mot de passe : </label>
+        <input type="text" name="passconf" value="" size="30" />
+        <br>
 
-<h5>Nom : </h5>
-<input type="text" name="nom" value="" size="30" />
+        <label>Nom : </label>
+        <input type="text" name="nom" value="" size="30" />
+        <br>
 
-<h5>Prenom : </h5>
-<input type="text" name="prenom" value="" size="30" />
+        <label>Prenom :</label>
+        <input type="text" name="prenom" value="" size="30" />
+        <br>
+
+        <label for='admin'>Admin : </label>
+        <input type="radio" name="admin" value=1 />Oui
+        <input type="radio" name="admin" value=0 checked/>Non
+        <br><br>
 
 
-<div><input type="submit" value="Créer !" /></div>
-<?php echo form_close(); ?><br/>
+        <div><input type="submit" value="Créer !" /></div>
+        <?php echo form_close(); ?><br/>
 
-</form>
+    </form>
 
 </body>
 </html>

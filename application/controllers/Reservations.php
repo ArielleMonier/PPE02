@@ -95,7 +95,7 @@ class Reservations extends CI_Controller {
             $this->load->view('reservations/creation_compte');
         } else {
             $this->reservations_modele->set_create_compte();
-            $this->load->view('create_success');
+            $this->load->view('reservations/create_success');
         }
     }
 

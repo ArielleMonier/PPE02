@@ -47,7 +47,8 @@ class reservations_modele extends CI_Model {
             'Login' => $this->input->post('login'),
             'Mdp' => $this->input->post('password'),
             'Nom' => $this->input->post('nom'),
-            'Prenom' => $this->input->post('prenom')
+            'Prenom' => $this->input->post('prenom'),
+            'Admin' => $this->input->post('admin')
         );
         return $this->db->insert('Utilisateur', $data);
     }
