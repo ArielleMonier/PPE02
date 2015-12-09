@@ -14,11 +14,11 @@
         <br>
 
         <label>Mot de passe : </label>
-        <input type="text" name="password" value="" size="30" />
+        <input type="password" name="password" value="" size="30" />
         <br>
 
         <label>Confirmer mot de passe : </label>
-        <input type="text" name="passconf" value="" size="30" />
+        <input type="password" name="passconf" value="" size="30" />
         <br>
 
         <label>Nom : </label>
