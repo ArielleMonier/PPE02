@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>My Form</title>
-        
+         <link rel="stylesheet" type="text/css" href="http://localhost/codeigniter/css/formulaire.css" />
     </head>
     <body>
 
