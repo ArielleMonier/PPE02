@@ -9,47 +9,11 @@ form {
     border-radius: 1em;
 }
 
-/*form div + div {
-    margin-top: 1em;
-}
-
-label, input
-{
-    display: block;
-    width: 150px;
-    float: left;
-    margin-top: 1em;
-}
-*/
 input:focus, textarea:focus {
     /* Afin de rehausser les éléments actifs */
     border-color: #000;
 }
-
-/*.button {
-    /* Pour positionner les boutons de la même manière que les champs textuels */
-    /*padding-left: 90px; /* même dimension que les étiquettes */
-/*}
-
-button {*/
-    /* Cette marge représente approximativement le même espace
-       que celui entre les étiquettes et les champs textuels */
-    /*margin-left: .5em;
-}
-
-input, textarea, select, option {
- background-color:#FFF3F3;
- }
- 
- select {
- margin-top:10px;
- }
- 
- label.inline {
- display:inline;
- margin-right:50px;
- }*/
-    
+   
 body {
  font-family:"trebuchet ms",sans-serif;
  font-size:90%;
