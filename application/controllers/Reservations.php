@@ -68,9 +68,6 @@ class Reservations extends CI_Controller {
 
 
 
-        $this->load->library('form_validation');
-
-
         $this->form_validation->set_rules('id', "id", 'required');
         //$this->form_validation->set_rules('Date_Arrivee', "La date d'arrivee ", 'trim|required|xss_clean');
         //$this->form_validation->set_rules('Date_Depart', "La date de départ", 'trim|required|xss_clean');
