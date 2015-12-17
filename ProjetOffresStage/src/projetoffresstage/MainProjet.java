@@ -13,6 +13,8 @@ public class MainProjet {
     public static ArrayList<Entreprise>lesEntreprises;
     public static void main(String[] args) {
         
+        MenuPrincipal m = new MenuPrincipal();
+        m.setVisible(true);
     }
     
 }

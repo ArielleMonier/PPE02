@@ -77,6 +77,11 @@ public class MenuCreationEntreprise extends javax.swing.JFrame {
         });
 
         btnEnvoyer.setText("Envoyer");
+        btnEnvoyer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEnvoyerActionPerformed(evt);
+            }
+        });
 
         btnAnnuler.setText("Annuler");
         btnAnnuler.addActionListener(new java.awt.event.ActionListener() {
@@ -180,6 +185,10 @@ public class MenuCreationEntreprise extends javax.swing.JFrame {
     private void btnAnnulerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnnulerActionPerformed
         this.dispose();
     }//GEN-LAST:event_btnAnnulerActionPerformed
+
+    private void btnEnvoyerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnvoyerActionPerformed
+        
+    }//GEN-LAST:event_btnEnvoyerActionPerformed
 
     /**
      * @param args the command line arguments
