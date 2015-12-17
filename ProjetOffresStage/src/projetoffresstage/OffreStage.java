@@ -12,8 +12,9 @@ public class OffreStage {
     private String dureeOffre;
     private String cheminOffre;
     private boolean Valide;
+    private Entreprise lEntreprise;
 
-    public OffreStage(String libelleOffre, String descriptifOffre, String domaineOffre, Date dateDebutOffre, String dureeOffre, String cheminOffre, boolean Valide) {
+    public OffreStage(String libelleOffre, String descriptifOffre, String domaineOffre, Date dateDebutOffre, String dureeOffre, String cheminOffre, boolean Valide, Entreprise lEntreprise) {
         this.libelleOffre = libelleOffre;
         this.descriptifOffre = descriptifOffre;
         this.domaineOffre = domaineOffre;
@@ -21,6 +22,7 @@ public class OffreStage {
         this.dureeOffre = dureeOffre;
         this.cheminOffre = cheminOffre;
         this.Valide = Valide;
+        this.lEntreprise=lEntreprise;
     }
 
     public String getLibelleOffre() {
@@ -79,5 +81,12 @@ public class OffreStage {
         this.Valide = Valide;
     }
     
+    public Entreprise getLEntreprise(){
+        return lEntreprise;
+    }
+    
+    public void setLEntreprise(){
+        this.lEntreprise = lEntreprise;
+    }
     
 }
