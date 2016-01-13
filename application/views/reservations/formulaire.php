@@ -46,9 +46,9 @@
             <input type="radio" name="forfait" value=1 />Oui
             <input type="radio" name="forfait" value=0 checked/>Non
             <br>
-        </div>
+        </div><br />
         <input type="submit" name="submit" value="Réserver !" />
-        <a href="http://localhost/codeigniter/index.php/Reservations/calendrier" id ="bouton" class="bouton" style='font-family:"trebuchet ms","sans-serif"'>Retour</a>
+        <a href="http://localhost/codeigniter/index.php/Reservations/calendrier" id ="bouton" class="bouton" style='font-family:"trebuchet ms","sans-serif"'>Retour !</a>
         <?php echo form_close(); ?><br/>
 
 
