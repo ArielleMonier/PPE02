@@ -84,3 +84,11 @@ input[type=submit], input[type=reset]{
 a, a:hover, a:active, a:visited{
      color:black;
  }
+
+a.bouton:hover{
+     background-color:white;
+ }
+
+ input[type=submit]:hover{
+     background-color:white;
+ }
