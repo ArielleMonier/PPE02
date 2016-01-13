@@ -67,23 +67,20 @@ input[type=submit], input[type=reset]{
  }
  
  a.bouton {
-     //display: block;
-     //line-height: 5px;
      font-size: 13px;
      background-color:#FFF3F3;
      margin-left:13px;
-     //margin-top:-10px;
      padding-left:22px;
      padding-right:22px;
      padding-top:2pt;
      padding-bottom:3px;
      border-radius:5px;
-     //width:100px;
-     //margin-left:130px;
      box-shadow:1px 1px 1px #D83F3D;
      line-height:10px;
      text-align:center;
-     //vertical-align: top;
      text-decoration: none;
      border: 1px solid #F5C5C5;
+ }
+a, a:hover, a:active, a:visited{
+     color:black;
  }
