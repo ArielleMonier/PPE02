@@ -11,11 +11,12 @@
         echo validation_errors();
         echo form_open('reservations/ajout_utilisateur');
         ?>
-
-        <div>
+        <fieldset>
+            <legend>Votre Voyage</legend>
+        <!--<div>
             <label for="id">Votre id : </label>
             <input type="text" name="id" value=""/><br />
-        </div>
+        </div>-->
 
         <div>
             <label for="date_arrivee">Date d'arrivée :</label>
@@ -47,7 +48,7 @@
             <br>
         </div>
         <input type="submit" name="submit" value="Réserver !" />
-        <a href="http://localhost/codeigniter/index.php/Reservations/calendrier" class="bouton" style='font-family:"trebuchet ms","sans-serif"'>Retour</a>
+        <a href="http://localhost/codeigniter/index.php/Reservations/calendrier" id ="bouton" class="bouton" style='font-family:"trebuchet ms","sans-serif"'>Retour</a>
         <?php echo form_close(); ?><br/>
 
 
