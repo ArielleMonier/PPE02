@@ -12,7 +12,7 @@
         echo form_open('reservations/ajout_utilisateur');
         ?>
         <fieldset>
-            <legend>Votre Voyage</legend>
+            <legend>Votre Séjour</legend>
         <!--<div>
             <label for="id">Votre id : </label>
             <input type="text" name="id" value=""/><br />
