@@ -4,6 +4,7 @@ class reservations_modele extends CI_Model {
 
     public function __construct() {
         $this->load->database();
+        $this->load->library('session');
     }
 
     public function get_res($num = 0) {
@@ -52,5 +53,4 @@ class reservations_modele extends CI_Model {
         );
         return $this->db->insert('Utilisateur', $data);
     }
-
 }
