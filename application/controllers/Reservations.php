@@ -1,7 +1,18 @@
 <?php
 
 class Reservations extends CI_Controller {
-
+/**
+ * 
+ */
+    public function __construct() {
+        parent::__construct();
+        $this->load->database();
+        $this->load->library('session');
+    }
+/**
+ * 
+ * @param type $numclient
+ */
     public function afficher($numclient = 0) {
 
         if ($numclient == 0) {
@@ -22,7 +33,12 @@ class Reservations extends CI_Controller {
         $this->load->view('reservations/afficher', $data);
         $this->load->view('templates/footer', $data);
     }
-
+/**
+ * 
+ * @param type $num
+ * @param type $annee
+ * @param type $mois
+ */
     public function calendrier($num = 0, $annee = 0, $mois = 0) {
 
         /**
@@ -87,8 +103,8 @@ class Reservations extends CI_Controller {
         $this->load->helper('form');
         $this->load->library('form_validation');
         $this->load->model('reservations_modele');
-        
-         //$this->form_validation->set_rules('Login', "login", 'required');
+
+        $this->form_validation->set_rules('Login', "login", 'required');
 
         if ($this->form_validation->run() == FALSE) {
             $this->load->view('reservations/creation_compte');
@@ -96,6 +112,21 @@ class Reservations extends CI_Controller {
             $this->reservations_modele->set_create_compte();
             $this->load->view('reservations/create_success');
         }
+    }
+
+    public function connexion() {
+        $this->load->helper(array('form', 'url'));
+        $this->load->library('form_validation');
+
+        $this->form_validation->set_rules('Login', 'Login', 'required');
+        $this->form_validation->set_rules('mdp', 'mdp', 'required');
+
+        if ($this->form_validation->run() == FALSE) {
+            $this->load->view('connexion/connexion');
+        } else {
+            $this->load->view('connexion/ConnexionSuccess');
+        }
+        //$this->load->view('reservations/formulaire');
     }
 
 }
