@@ -8,6 +8,12 @@
         <?php echo"Date de départ :" . $res_new['Date_Depart']; ?> <br/>
         <?php echo"Nombre de personne : " . $res_new['Nb_Personnes']; ?> <br/>
         <?php echo "Ménage ? " . $res_new['Menage']; ?> <br/>
+        <?php echo "Pension : " . $res_new['pension']; ?><br />
+        <?php if($res_new['forfaitMenage'] == 0){
+            echo "Forfait ménage : Non";
+        }else{
+            echo "Forfait ménage : Oui"; 
+        }?><br />
         <?php echo"Etat de la réservation : " . $res_new['EtatReservation']; ?></p>
 
 
