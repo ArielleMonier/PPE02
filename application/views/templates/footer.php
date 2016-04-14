@@ -1,5 +1,5 @@
 
-<strong>Monier &copy; 2015</strong>
+<strong></strong>
 </body>
 </html>
 
