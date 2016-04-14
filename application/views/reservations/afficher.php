@@ -1,4 +1,8 @@
-
+<head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="http://localhost/codeigniter/css/formulaire.css" />
+        <title></title>
+    </head>
 
 <h1> <?php echo "$titre (Client n°$num )"; ?> </h1> 
 
@@ -19,7 +23,7 @@
 
 <?php endforeach; ?>
 
-<p>Retour au <a href ='http://localhost/codeigniter/index.php/reservations/calendrier'>calendrier</a>
-
+<p>Retour au <a href ='http://localhost/codeigniter/index.php/reservations/calendrier' id ="bouton" class="bouton" style='font-family:"trebuchet ms","sans-serif"'>calendrier</a>
+<a href="http://localhost/codeigniter/index.php/Reservations/create_compte" id ="bouton" class="bouton" style='font-family:"trebuchet ms","sans-serif"'>S'inscrire</a>
 </p>
 
