@@ -30,7 +30,7 @@
 
 
         <div><input type="submit" value="Créer !" />
-            <a href="http://localhost/codeigniter/index.php/Reservations/ajout_utilisateur" id ="bouton" class="bouton" style='font-family:"trebuchet ms","sans-serif"'>Retour !</a>
+            <a href="http://localhost/codeigniter/index.php/Reservations/calendrier" id ="bouton" class="bouton" style='font-family:"trebuchet ms","sans-serif"'>Retour !</a>
         </div>
 <?php echo form_close(); ?><br/>
 
