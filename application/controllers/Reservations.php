@@ -1,31 +1,29 @@
 <?php
 
 class Reservations extends CI_Controller {
-/**
- * 
- */
+
+    /**
+     * 
+     */
     public function __construct() {
         parent::__construct();
         $this->load->database();
         $this->load->library('session');
     }
-/**
- * 
- * @param type $numclient
- */
+
+    /**
+     * 
+     * @param type $numclient
+     */
     public function afficher($numclient = 0) {
-
-        if ($numclient == 0) {
-            show_404(); //Erreur 404
-        }
-
         $this->load->model('Reservations_modele');
-
         $data['titre'] = "Mes réservations";
         $data['num'] = $numclient;
         $data['res'] = $this->Reservations_modele->get_res($numclient);
-
-
+        
+        /*if ($numclient == 0) {
+            show_404(); //Erreur 404
+        }*/
         /**
          * Chargement de la vue 
          */
@@ -33,12 +31,13 @@ class Reservations extends CI_Controller {
         $this->load->view('reservations/afficher', $data);
         $this->load->view('templates/footer', $data);
     }
-/**
- * 
- * @param type $num
- * @param type $annee
- * @param type $mois
- */
+
+    /**
+     * 
+     * @param type $num
+     * @param type $annee
+     * @param type $mois
+     */
     public function calendrier($num = 0, $annee = 0, $mois = 0) {
 
         /**
