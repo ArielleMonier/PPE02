@@ -49,6 +49,7 @@
         </div><br />
         <input type="submit" name="submit" value="Réserver !" />
         <a href="http://localhost/codeigniter/index.php/Reservations/calendrier" id ="bouton" class="bouton" style='font-family:"trebuchet ms","sans-serif"'>Retour !</a>
+        <a href="http://localhost/codeigniter/index.php/Reservations/create_compte" id="create_compte">S'inscrire</a>
         <?php echo form_close(); ?><br/>
 
 
